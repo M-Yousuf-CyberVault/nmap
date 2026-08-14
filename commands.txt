@@ -1,0 +1,15 @@
+
+sudo ifconfig eth0 down
+sudo ifconfig eth0 up
+
+
+sudo systemctl restart networking
+
+
+sudo dhcpd eth0  // force this card to get internet
+
+
+ping -I eth0 192.168.56.102  // using card eth0 ( if using multiple cards )
+
+
+xsltproc  file.xls  -o  newFile.html
